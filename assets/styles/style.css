@@ -1,216 +1,409 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #e6e6e6;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+  background-color: #e6e6e6;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(images/bg_1.png);
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
-.br-bg {
-    background-image: url(images/bg_1.png);
-    background-size: 100% 95%;
-    background-repeat: no-repeat;
-    background-position: top;
-    
-}
+/* .br-bg {
+  background-image: url(images/bg_1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+} */
 
 .logo h1 {
-    font-size: 18px;
-    padding: 10px;
-    color: white;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
 }
 
 nav a {
-    top: 0;
-    padding: 14px 16px;
-    height: 70px;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
+  top: 0;
+  padding: 14px 16px;
+  height: 70px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav li {
-    display: inline;
-    list-style-type: none;
+  display: inline;
+  list-style-type: none;
 }
- 
+
 .bar {
-    display: flex;
-    text-align: right;
-    height: 70px;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 190px;
-    margin-right: 190px;
+  display: flex;
+  text-align: right;
+  height: 70px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 190px;
+  margin-right: 190px;
 }
 nav {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    background-color: #a1aeff;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  /* background-color: #a1aeff; */
 }
 
 header {
-    display: inline;
+  display: inline;
 }
 
 .navigation {
-    display: flex;
-    flex-grow: 1;
-    width: 50%;
+  display: flex;
+  flex-grow: 1;
+  width: 50%;
 }
 
 .navigation ul {
-    display: flex;
-    margin-left: auto;
+  display: flex;
+  margin-left: auto;
 }
 
 .featured-image {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .button-mobile {
-    display: none;
-    flex-direction: column;
-    height: 23px;
-    justify-content: space-between;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  height: 23px;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .button-mobile span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    border-radius: 5px;
-    background-color: white;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 .daftar {
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    box-shadow: 8px 8px 15px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    border: 5px;
-    padding: 10px;
-    margin-top: 20px;
-    margin-right: 10px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 8px 8px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 .daftar:hover {
-    background-color: #536dfe;
+  background-color: #536dfe;
 }
 
 #beranda {
-    display: flex;
-    width: auto;
-    height: auto;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 80px;
-    padding-bottom: 180px;
+  display: flex;
+  width: auto;
+  height: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 180px;
 }
 
 #tentang-kami {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 #tentang-kami div h2 {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
 main {
-    padding: 20;
-    overflow: auto;
+  padding: 20;
+  overflow: auto;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: 5px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    margin: 10px;
-    transition: 0.8s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 5px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin: 10px;
+  transition: 0.8s;
 }
 
 .card:hover {
-    background-color: #a7a7a7;
+  background-color: #a7a7a7;
 }
 
 .teks_1 {
-    text-align: left;
-    line-height: 50px;
-    width: 50%;
-    padding: 10px;
-    margin-top: 80px;
-    color: white;
+  text-align: left;
+  line-height: 50px;
+  width: 50%;
+  padding: 10px;
+  margin-top: 80px;
+  color: white;
 }
 
 .gmbr {
-    margin-top: 55px;
+  margin-top: 55px;
 }
 
 div h1 {
-    margin: auto;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: normal;
+  margin: auto;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: normal;
 }
 
 h2 {
-    padding-top: 90px;
-    text-align: center;
+  padding-top: 90px;
+  text-align: center;
 }
 p {
-    text-align: center;
+  text-align: center;
 }
 
 #program {
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
-    overflow: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  overflow: auto;
 }
 
 .col-pr {
-    display: flex;
-    margin-bottom: 80px;
+  display: flex;
+  margin-bottom: 80px;
 }
 
-
 .col-tk {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    margin-bottom: 130px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 130px;
 }
 
 .img-pr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.img-tk {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kami {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #3c51c3;
+}
+
+.biodata {
+  padding: 20px;
+  color: white;
+  background-color: #536dfe;
+}
+
+.biodata h2 {
+  padding-top: 20px;
+}
+.biodata header {
+  text-align: center;
+}
+
+.biodata div p {
+  text-align: left;
+}
+
+.saya {
+  display: flex;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.bio {
+  display: flex;
+}
+
+.icon-bio {
+  padding: 10px;
+  margin: 20px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-bio img {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+.teks-nama {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.teks-nama p {
+  margin-bottom: 33px;
+}
+
+@media screen and (max-width: 1500px) {
+  .br-bg {
+    background-size: 1500px 660px;
+    padding-bottom: 240px;
+  }
+
+  .gmbr {
+    max-width: 400px;
+    margin-left: 50px;
+  }
+
+  #beranda {
+    padding-bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .icon-bio img {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .icon-bio img {
+    margin-bottom: 50px;
+  }
+  body {
+    background-image: url(images/bg_1.png);
+    background-size: 100% 500px;
+    padding-bottom: 50px;
+  }
+  .bar {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url(images/bg_1.png);
+    background-size: 100% 500px;
+    padding-bottom: 100px;
+  }
+  .bar {
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+  }
+  #beranda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    margin: auto;
+    padding-bottom: 0;
+  }
+  .teks_1 {
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+  .logo h1 {
+    padding: 0;
+  }
+  .gmbr {
+    width: 100%;
+    max-width: 300px;
+    margin: 50px;
+  }
+  #program {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+  }
+  .col-pr {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  #tentang-kami {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+  }
+  .col-tk {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .foto {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -218,275 +411,82 @@ p {
     max-width: 200px;
     object-fit: cover;
     object-position: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-.img-tk {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 100px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.kami {
-    padding: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    color: white;
-    background-color: #3c51c3;
-}
-
-.biodata {
-    padding: 20px;
-    color: white;
-    background-color: #536dfe;
-}
-
-.biodata h2 {
-    padding-top: 20px;
-}
-.biodata header {
-    text-align: center;
-}
-
-.biodata div p {
-    text-align: left;
-}
-
-.saya {
-    display: flex;
-    padding: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.bio {
-    display: flex;
-}
-
-.icon-bio {
-    padding: 10px;
-    margin: 20px;
-    margin-left: 40px;
+  }
+  .saya {
     display: flex;
     flex-direction: column;
+    margin: auto;
+  }
+  .icon-bio img {
+    margin-bottom: auto;
+  }
+  .teks-nama p {
+    margin-bottom: 45px;
+  }
 }
-
-.icon-bio img {
-    width: 35px;
-    margin-bottom: 20px;
-}
-
-.teks-nama {
-    padding: 10px;
-    margin: 10px;
-    margin-left: 5px;
-    width: 100%;
-}
-
-.teks-nama p {
-    margin-bottom: 33px;
-}
-
-@media screen and (max-width: 1500px) {
-    .br-bg {
-        background-size: 1500px 660px;
-        padding-bottom: 240px;
-    }
-
-    .gmbr {
-        max-width: 400px;
-        margin-left: 50px;
-    }
-
-    #beranda {
-        padding-bottom: 250px;
-    }
-}
-
-@media screen and (max-width: 1450px) {
-    .icon-bio img {
-        margin-bottom: 25px;
-    }
-}
-
-@media screen and (max-width: 1235px) {
-    .icon-bio img {
-        margin-bottom: 50px;
-    }
-    .br-bg {
-        background-image: url(images/bg_1.png);
-        background-size: 100% 500px;
-        padding-bottom: 50px;
-    }
-    .bar {
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .br-bg {
-        background-image: url(images/bg_1.png);
-        background-size: 100% 500px;
-        padding-bottom: 100px;
-    }
-    .bar {
-        display: flex;
-        text-align: right;
-        justify-content: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: auto;
-    }
-    #beranda  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding-top: 100px;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
-        margin-top: 80px;
-        margin: auto;
-        padding-bottom: 0;
-    }
-    .teks_1{
-        padding-top: 50px;
-        text-align: center;
-        margin: auto;
-        width: 80%;
-    }
-    .logo h1 {
-        padding: 0;
-    }
-    .gmbr {
-        width: 100%;
-        max-width: 300px;
-        margin: 50px;
-    }
-    #program {
-        margin: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 80%;
-
-    }
-    .col-pr {
-        display: flex;
-        flex-direction: column;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
-    }
-    #tentang-kami {
-        margin: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 80%;
-    }
-    .col-tk {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        padding-bottom: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .foto {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 200px;
-        object-fit: cover;
-        object-position: center;
-    }
-    .saya {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    .icon-bio img {
-        margin-bottom: auto;
-    }
-    .teks-nama p {
-        margin-bottom: 45px;
-    }
-}
-
 
 @media screen and (max-width: 800px) {
-    .icon-bio img {
-        margin-bottom: 25px;
-    }
+  .icon-bio img {
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .gmbr {
-        display: none;
-    }
-    .teks_1 {
-        padding-bottom: 180px;
-    }
-    .icon-bio img {
-        margin-bottom: 38px;
-    }
-    .col-tk {
-        flex-direction: column;
-        max-width: 720px;
-    }
-    #beranda {
-        padding-top: 50px;
-        padding-bottom: 100px;
-    }
-    #program {
-        max-width: 740px;
-    }
-    .navigation ul {
-        position: absolute;
-        flex-direction: column;
-        left: -500px;
-        top: 70px;
-        margin-top: auto;
-        padding-left:  0;
-        background-color: #a1aeff;
-        width: 48%;
-        height: 100vh;
-        transition: 0.7s;
-    }
-    .navigation ul li  {
-        padding: 0;
-        margin: 30px auto;
-    }
-    nav a:hover {
-        text-decoration: none;
-    }
-    .button-mobile {
-        display: flex;
-    }
-    .bar {
-        justify-content: space-between;
-    }
-    .navigation ul.active {
-        left: 0;
-    }
+  .gmbr {
+    display: none;
+  }
+  .teks_1 {
+    padding-bottom: 180px;
+  }
+  .icon-bio img {
+    margin-bottom: 38px;
+  }
+  .col-tk {
+    flex-direction: column;
+    max-width: 720px;
+  }
+  #beranda {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  #program {
+    max-width: 740px;
+  }
+  .navigation ul {
+    position: absolute;
+    flex-direction: column;
+    left: -500px;
+    top: 70px;
+    margin-top: auto;
+    padding-left: 0;
+    background-color: #a1aeff;
+    width: 48%;
+    height: 100vh;
+    transition: 0.7s;
+  }
+  .navigation ul li {
+    padding: 0;
+    margin: 30px auto;
+  }
+  nav a:hover {
+    text-decoration: none;
+  }
+  .button-mobile {
+    display: flex;
+  }
+  .bar {
+    justify-content: space-between;
+  }
+  .navigation ul.active {
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .teks_1 {
-        padding-bottom: 150pxpx;
-    }
-    .navigation ul {
-        width: 60%;
-    }
+  .teks_1 {
+    padding-bottom: 150pxpx;
+  }
+  .navigation ul {
+    width: 60%;
+  }
 }
